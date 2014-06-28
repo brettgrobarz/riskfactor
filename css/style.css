@@ -6,13 +6,6 @@
 }
 
 
-h2 {font-size: 16px}
-
-h3 {font-size: 14px}
-
-p {font-size: 10px}
-
-p2 {font-size: 14px}
 
 a  {text-decoration: none;
 	color: black;}
@@ -20,11 +13,59 @@ a  {text-decoration: none;
 a:hover {text-decoration: none;
 		color: red;}
 
-span {background: #d3dbe3;
+
+#navcontainer ul
+{
+text-align: center;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 0;
+margin-top: 0;
+/* cancels gap caused by top padding in Opera 7.54 */
+margin-left: 0;
+background-color: gray;
+color: white;
+width: 100%;
+font-family: Arial,Helvetica,sans-serif;
+line-height: 18px;
+/* fixes Firefox 0.9.3 */
+}
+
+#navcontainer ul li
+{
+display: inline;
+padding-left: 0;
+padding-right: 0;
+padding-bottom: 5px;
+/* matches link padding except for left and right */
+padding-top: 5px;
+}
+
+#navcontainer ul li a
+{
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+color: white;
+text-decoration: none;
+border-right: 1px solid #fff;
+}
+
+#navcontainer ul li a:hover
+{
+background-color: #369;
+color: white;
+}
+
+#navcontainer #active { border-left: 1px solid #fff; }
+
+/* span {background: #d3dbe3;
 		border-radius: 4px;
 	}
+*/
 
-div {
+ .main {
   display: block;
   background: white;
   border: 1px solid black;
@@ -38,30 +79,3 @@ div {
     width: 100%;
     height: auto;
 }
-
-#nav { 
-      float: center;
-      margin: 20px;
-      padding: 10px;
-      list-style: none;
-      background-color: #f2f2f2;
-      border-radius: 4px;
-      border: 1px solid black;
-      }
-
-#nav li {
-      float: center; }
-
-#nav li a {
-      display: block;
-      padding: 8px 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
-      }
-
-#nav li a:hover {
-      color: #c00;
-      background-color: #fff; 
-  	border-radius: 4px;
-  }
